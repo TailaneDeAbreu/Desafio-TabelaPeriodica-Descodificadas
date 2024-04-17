@@ -1,0 +1,645 @@
+.tabela-periodica {
+    display: grid;
+    grid-template-columns: 2% repeat(18, minmax(5rem, 1fr)) 3%;
+    grid-template-rows: 2% repeat(10, 1fr);
+    grid-template-areas:
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". e1 . . . . . . . . . . . . . . . . e2 ."
+    ". e3 e4 . . . . . . . . . . e5 e6 e7 e8 e9 e10 ."
+    ". e11 e12 . . . . . . . . . . e13 e14 e15 e16 e17 e18 ."
+    ". e19 e20 e21 e22 e23 e24 e25 e26 e27 e28 e29 e30 e31 e32 e33 e34 e35 e36 ."
+    ". e37 e38 e39 e40 e41 e42 e43 e44 e45 e46 e47 e48 e49 e50 e51 e52 e53 e54 ."
+    ". e55 e56 e5771 e72 e73 e74 e75 e76 e77 e78 e79 e80 e81 e82 e83 e84 e85 e86 ."
+    ". e87 e88 e89103 e104 e105 e106 e107 e108 e109 e110 e111 e112 e113 e114 e115 e116 e117 e118 ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . e57 e58 e59 e60 e61 e62 e63 e64 e65 e66 e67 e68 e69 e70 e71 ."
+    ". . . . e89 e90 e91 e92 e93 e94 e95 e96 e97 e98 e99 e100 e101 e102 e103 ."
+    ;
+    gap: 0.2vw;
+    height: 90vh;
+    width: 100vw;
+}
+
+.titulo{
+    width: 10em;
+    font-size: 3em;
+    text-transform: capitalize;
+    grid-column: 1/-1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    padding: 0.5em;
+}
+
+.tabela-periodica div {
+    color: aliceblue;
+    border-radius: 0.7em;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1em;
+    padding-top: 1.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.2em;
+}
+
+.tabela-periodica div span{
+    align-self: end;
+}
+
+.tabela-periodica div h2{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.tabela-periodica div p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.metaisalcalinos{
+    background-color: #dbc85d;
+}
+
+.semimetais{
+    background-color: #66a8d6;
+}
+
+.metaisalcalinoterrosos{
+    background-color: #c50837;
+}
+
+.metaistansicao{
+    background-color: #46439c;
+}
+
+.halogenicos{
+    background-color: #25c0a1;
+}
+
+.ametais{
+    background-color: #427f93;
+}
+
+.gasesnobres{
+    background-color: #872fb3;
+}
+
+.lantanideos{
+    background-color: #d2315f;
+}
+
+.actinideos{
+    background-color: #8a837f;
+}
+
+.outrosmetais{
+    background-color: #b99147;
+}
+
+.extencao{
+    background-color: #8598bd;
+}
+/* seta */
+.seta{
+    border-left: solid rgb(44, 41, 41) 0.2em;
+    border-bottom: solid rgb(44, 41, 41) 0.2em;
+    border-radius: 0 !important;
+}
+
+.seta-1{
+    margin-bottom: 0.9em;
+    margin-top: 80%;
+    display: flex;
+    margin-left: 32%;
+    grid-row: 7/11;
+    grid-column: 4/span 1;
+    position: relative;
+}
+
+.seta-2{
+    margin-bottom: 0.9em;
+    margin-top: 80%;
+    margin-left: 17%;
+    grid-row: 8/12;
+    grid-column: 4/span 1;
+    position: relative;
+}
+
+
+.seta-svg-1{
+    height: 2rem;
+    margin-left: 85%;
+    display: flex;
+    align-self: end;
+    grid-row: 10/11;
+    grid-column: 4/span 1;
+    position: relative;
+}
+
+.seta-svg-2{
+    height: 2rem;
+    margin-left: 85%;
+    display: flex;
+    align-self: end;
+    grid-row: 11/12;
+    grid-column: 4/span 1;
+    position: relative;
+}
+
+.element-1 {
+    grid-area: e1;
+}
+
+.element-2 {
+    grid-area: e2;
+}
+
+.element-3 {
+    grid-area: e3;
+}
+
+.element-4 {
+    grid-area: e4;
+}
+
+.element-5 {
+    grid-area: e5;
+}
+
+.element-6 {
+    grid-area: e6;
+}
+
+.element-7 {
+    grid-area: e7;
+}
+
+.element-8 {
+    grid-area: e8;
+}
+
+.element-9 {
+    grid-area: e9;
+}
+
+.element-10 {
+    grid-area: e10;
+}
+
+.element-11 {
+    grid-area: e11;
+}
+
+.element-12 {
+    grid-area: e12;
+}
+
+.element-13 {
+    grid-area: e13;
+}
+
+.element-14 {
+    grid-area: e14;
+}
+
+.element-15 {
+    grid-area: e15;
+}
+
+.element-16 {
+    grid-area: e16;
+}
+
+.element-17 {
+    grid-area: e17;
+}
+
+.element-18 {
+    grid-area: e18;
+}
+
+.element-19 {
+    grid-area: e19;
+}
+
+.element-20 {
+    grid-area: e20;
+}
+
+.element-21 {
+    grid-area: e21;
+}
+
+.element-22 {
+    grid-area: e22;
+}
+
+.element-23 {
+    grid-area: e23;
+}
+
+.element-24 {
+    grid-area: e24;
+}
+
+.element-25 {
+    grid-area: e25;
+}
+
+.element-26 {
+    grid-area: e26;
+}
+
+.element-27 {
+    grid-area: e27;
+}
+
+.element-28 {
+    grid-area: e28;
+}
+
+.element-29 {
+    grid-area: e29;
+}
+
+.element-30 {
+    grid-area: e30;
+}
+
+.element-31 {
+    grid-area: e31;
+}
+
+.element-32 {
+    grid-area: e32;
+}
+
+.element-33 {
+    grid-area: e33;
+}
+
+.element-34 {
+    grid-area: e34;
+}
+
+.element-35 {
+    grid-area: e35;
+}
+
+.element-36 {
+    grid-area: e36;
+}
+
+.element-37 {
+    grid-area: e37;
+}
+
+.element-38 {
+    grid-area: e38;
+}
+
+.element-39 {
+    grid-area: e39;
+}
+
+.element-40 {
+    grid-area: e40;
+}
+
+.element-41 {
+    grid-area: e41;
+}
+
+.element-42 {
+    grid-area: e42;
+}
+
+.element-43 {
+    grid-area: e43;
+}
+
+.element-44 {
+    grid-area: e44;
+}
+
+.element-45 {
+    grid-area: e45;
+}
+
+.element-46 {
+    grid-area: e46;
+}
+
+.element-47 {
+    grid-area: e47;
+}
+
+.element-48 {
+    grid-area: e48;
+}
+
+.element-49 {
+    grid-area: e49;
+}
+
+.element-50 {
+    grid-area: e50;
+}
+
+.element-51 {
+    grid-area: e51;
+}
+
+.element-52 {
+    grid-area: e52;
+}
+
+.element-53 {
+    grid-area: e53;
+}
+
+.element-54 {
+    grid-area: e54;
+}
+
+.element-55 {
+    grid-area: e55;
+}
+
+.element-56 {
+    grid-area: e56;
+}
+
+.element-57-71 {
+    grid-area: e5771;
+}
+
+.element-57 {
+    grid-area: e57;
+}
+
+.element-58 {
+    grid-area: e58;
+}
+
+.element-59 {
+    grid-area: e59;
+}
+
+.element-60 {
+    grid-area: e60;
+}
+
+.element-61 {
+    grid-area: e61;
+}
+
+.element-62 {
+    grid-area: e62;
+}
+
+.element-63 {
+    grid-area: e63;
+}
+
+.element-64 {
+    grid-area: e64;
+}
+
+.element-65 {
+    grid-area: e65;
+}
+
+.element-66 {
+    grid-area: e66;
+}
+
+.element-67 {
+    grid-area: e67;
+}
+
+.element-68 {
+    grid-area: e68;
+}
+
+.element-69 {
+    grid-area: e69;
+}
+
+.element-70 {
+    grid-area: e70;
+}
+
+.element-71 {
+    grid-area: e71;
+}
+
+.element-72 {
+    grid-area: e72;
+}
+
+.element-73 {
+    grid-area: e73;
+}
+
+.element-74 {
+    grid-area: e74;
+}
+
+.element-75 {
+    grid-area: e75;
+}
+
+.element-76 {
+    grid-area: e76;
+}
+
+.element-77 {
+    grid-area: e77;
+}
+
+.element-78 {
+    grid-area: e78;
+}
+
+.element-79 {
+    grid-area: e79;
+}
+
+.element-80 {
+    grid-area: e80;
+}
+
+.element-81 {
+    grid-area: e81;
+}
+
+.element-82 {
+    grid-area: e82;
+}
+
+.element-83 {
+    grid-area: e83;
+}
+
+.element-84 {
+    grid-area: e84;
+}
+
+.element-85 {
+    grid-area: e85;
+}
+
+.element-86 {
+    grid-area: e86;
+}
+
+.element-87 {
+    grid-area: e87;
+}
+
+.element-88 {
+    grid-area: e88;
+}
+
+.element-89-103 {
+    grid-area: e89103;
+}
+
+.element-89 {
+    grid-area: e89;
+}
+
+.element-90 {
+    grid-area: e90;
+}
+
+.element-91 {
+    grid-area: e91;
+}
+
+.element-92 {
+    grid-area: e92;
+}
+
+.element-93 {
+    grid-area: e93;
+}
+
+.element-94 {
+    grid-area: e94;
+}
+
+.element-95 {
+    grid-area: e95;
+}
+
+.element-96 {
+    grid-area: e96;
+}
+
+.element-97 {
+    grid-area: e97;
+}
+
+.element-98 {
+    grid-area: e98;
+}
+
+.element-99 {
+    grid-area: e99;
+}
+
+.element-100 {
+    grid-area: e100;
+}
+
+.element-101 {
+    grid-area: e101;
+}
+
+.element-102 {
+    grid-area: e102;
+}
+
+.element-103 {
+    grid-area: e103;
+}
+
+.element-104 {
+    grid-area: e104;
+}
+
+.element-105 {
+    grid-area: e105;
+}
+
+.element-106 {
+    grid-area: e106;
+}
+
+.element-107 {
+    grid-area: e107;
+}
+
+.element-108 {
+    grid-area: e108;
+}
+
+.element-109 {
+    grid-area: e109;
+}
+
+.element-110 {
+    grid-area: e110;
+}
+
+.element-111 {
+    grid-area: e111;
+}
+
+.element-112 {
+    grid-area: e112;
+}
+
+.element-113 {
+    grid-area: e113;
+}
+
+.element-114 {
+    grid-area: e114;
+}
+
+.element-115 {
+    grid-area: e115;
+}
+
+.element-116 {
+    grid-area: e116;
+}
+
+.element-117 {
+    grid-area: e117;
+}
+
+.element-118 {
+    grid-area: e118;
+}
+
+
+
+/* -------------------------------------------- 1440x900 --------------------------------------------*/
+@media screen and (min-width: 1440px) and (min-height: 900px) and (orientation: landscape) {}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) and (orientation: landscape) {}
+
+/* -------------------------------------------- 768x1024 -------------------------------------------- */
+@media screen and (min-width: 768) and (min-height: 1024) and (orientation: landscape) {}
+
+@media screen and (min-width: 768) and (min-height: 1024) and (orientation: landscape) {}
+
+/* -------------------------------------------- 390x844 -------------------------------------------- */
+@media screen and (min-width: 390px) and (min-height: 844px) and (orientation: landscape) {}
+
+@media screen and (min-width: 390) and (min-height: 844) and (orientation: landscape) {}
+
